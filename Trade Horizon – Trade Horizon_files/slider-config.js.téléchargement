@@ -1,0 +1,92 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+$(document).ready(function () {
+    // let slides = 1;
+    // $('.slider-container .slider').bxSlider({
+    //     auto: true,
+    //     pager: true,
+    //     minSlides: slides,
+    //     maxSlides: slides,
+    //     moveSlides: slides,
+    //     controls: true,
+    //     touchEnabled: true,
+    //     nextText: '<i class="next-arrow"></i>',
+    //     prevText: '<i class="prev-arrow"></i>',
+    //     pagerType: 'short',
+    // });
+
+    $('.owl-carousel').owlCarousel({
+        // loop: true,
+        // margin:10,
+        nav:true,
+        navText : ["<span class='prev-arrow'></span>","<span class='next-arrow'></span>"],
+        autoplay:true,
+        // URLhashListener: true,
+        // startPosition: 'URLHash',
+         items: 1,
+        dots:false,
+        onInitialized: counter,
+        onChanged: counter,
+    });
+
+    function counter(event) {
+        if (!event.namespace) {
+            return;
+        }
+        var slides = event.relatedTarget;
+        $('.slider-counter .count').html(  '<span style="font-size: 18px; font-weight: 700;"> 0' + (slides.relative(slides.current())  + 1 ) + "</span>" + ' / ' + "0" + slides.items().length);
+    }
+
+
+    // $('.owl-carousel').on('changed.owl.carousel', function(event) {
+    //     var current = event.item.index;
+    //     var hash = $(event.target).find(".bg").eq(current).attr('data-hash');
+    //     $('.column'+hash).addClass('active');
+    // });
+    //
+    // $('.owl-carousel').on('change.owl.carousel', function(event) {
+    //     var current = event.item.index;
+    //     var hash = $(event.target).find(".bg").eq(current).attr('data-hash');
+    //     $('.column'+hash).removeClass('active');
+    // });
+
+    // $('#slider .column').on('click', function(){
+    //     $('.column').removeClass('active');
+    //     $(this).addClass('active');
+    // });
+
+});
+
+}
+/*
+     FILE ARCHIVED ON 13:59:59 Aug 15, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:14:05 Dec 31, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 190.931
+  exclusion.robots: 0.107
+  exclusion.robots.policy: 0.099
+  cdx.remote: 0.088
+  esindex: 0.01
+  LoadShardBlock: 144.192 (3)
+  PetaboxLoader3.datanode: 147.98 (5)
+  CDXLines.iter: 20.064 (3)
+  load_resource: 46.486
+  PetaboxLoader3.resolve: 27.151
+  loaddict: 6.802
+*/

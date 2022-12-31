@@ -1,0 +1,1105 @@
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/web/20220815140117im_/https://trade-horizon.com/wp-content/themes/trade/fonts/Gilroy-Regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("/web/20220815140117im_/https://trade-horizon.com/wp-content/themes/trade/fonts/Gilroy-Regular.woff2") format("woff2"), url("/web/20220815140117im_/https://trade-horizon.com/wp-content/themes/trade/fonts/Gilroy-Regular.woff") format("woff"), url("/web/20220815140117im_/https://trade-horizon.com/wp-content/themes/trade/fonts/Gilroy-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/web/20220815140117im_/https://trade-horizon.com/wp-content/themes/trade/fonts/Gilroy-Bold.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("/web/20220815140117im_/https://trade-horizon.com/wp-content/themes/trade/fonts/Gilroy-Bold.woff2") format("woff2"), url("/web/20220815140117im_/https://trade-horizon.com/wp-content/themes/trade/fonts/Gilroy-Bold.woff") format("woff"), url("/web/20220815140117im_/https://trade-horizon.com/wp-content/themes/trade/fonts/Gilroy-Bold.ttf") format("truetype"); }
+html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Gilroy", sans-serif;
+  background: #fff; }
+
+h1, h2, h3, h4, h5, h6, .h1 {
+  font-family: "Gilroy", sans-serif;
+  width: 100%;
+  color: #333333; }
+
+h1 {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 40px; }
+
+h3, h5 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 30px; }
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px; }
+
+h5 {
+  text-transform: uppercase; }
+
+a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #0eb679; }
+  a:hover {
+    color: #161617 !important; }
+
+section a {
+  text-decoration: underline !important; }
+
+section ul {
+  padding: 0 25px; }
+  section ul li {
+    list-style-type: none;
+    line-height: 28px;
+    color: #676767; }
+    section ul li:before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background: #0eb679;
+      margin-left: -25px;
+      margin-top: 11px; }
+
+p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #676767;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  margin-bottom: 30px; }
+
+.btn {
+  padding: 15px 40px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-family: "Gilroy", sans-serif;
+  text-decoration: none !important;
+  border-radius: 0;
+  font-weight: 700;
+  margin-top: 40px; }
+  .btn.login {
+    margin-right: 15px;
+    border: 1px solid #7a7c8b; }
+    .btn.login:hover {
+      background: #0eb679;
+      border: 1px solid #d1d3df;
+      color: #fff !important; }
+  .btn.green {
+    background: #0eb679; }
+    .btn.green:hover {
+      background: #daddef;
+      color: #0eb679 !important; }
+  .btn.white {
+    background: #fff;
+    color: #0eb679; }
+    .btn.white:hover {
+      background: #161617;
+      color: #fff !important; }
+  .btn.black {
+    background: #161617;
+    color: #fff; }
+    .btn.black:hover {
+      background: #0eb679;
+      color: #fff !important; }
+
+#language-nav-ul .sub-menu {
+  display: none;
+  position: absolute;
+  z-index: 1111;
+  background: none;
+  padding: 5px 0 0 0;
+  margin: 0;
+  list-style-type: none; }
+  #language-nav-ul .sub-menu::marker {
+    display: none; }
+
+header {
+  min-height: 750px;
+  background: #161617; }
+  header .main-menu {
+    height: 110px;
+    z-index: 11111;
+    border-bottom: 1px solid rgba(162, 165, 192, 0.25);
+    margin: 0px; }
+    header .main-menu.position-fixed {
+      background: #161617 !important; }
+    header .main-menu .icon-column {
+      position: absolute;
+      width: 110px;
+      height: 750px;
+      border-right: 1px solid rgba(162, 165, 192, 0.25);
+      margin: 0;
+      padding: 0; }
+      header .main-menu .icon-column a {
+        margin: 0;
+        padding: 0;
+        background: #0eb679;
+        width: 110px;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    header .main-menu .language-column {
+      position: absolute;
+      width: 110px;
+      height: 750px;
+      border-left: 1px solid rgba(162, 165, 192, 0.25);
+      margin: 0;
+      padding: 0;
+      right: 0; }
+      header .main-menu .language-column .lan {
+        margin: 0;
+        padding: 0;
+        width: 110px;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff; }
+      header .main-menu .language-column .header-scroll .rotated {
+        writing-mode: tb-rl;
+        transform: rotate(-180deg);
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 5px;
+        margin: 0 auto; }
+      header .main-menu .language-column .header-scroll .scroll {
+        position: absolute;
+        top: 385px;
+        left: 42px;
+        z-index: 10;
+        height: 150px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        font-size: 16px; }
+      header .main-menu .language-column .header-scroll .line {
+        width: 1px;
+        height: 110px;
+        background-color: #fff;
+        display: block;
+        top: 508px;
+        position: absolute;
+        margin: 55px;
+        z-index: 10; }
+        header .main-menu .language-column .header-scroll .line:before {
+          content: '';
+          width: 1px;
+          height: 50%;
+          top: 0;
+          background-color: #0eb679;
+          display: block;
+          animation: downWipe 2s ease-in-out infinite; }
+      header .main-menu .language-column .header-scroll .cube-bottom {
+        width: 110px;
+        height: 110px;
+        background: #0eb679;
+        bottom: 0;
+        position: absolute; }
+    header .main-menu .logotype {
+      margin-right: 80px;
+      z-index: 1; }
+    header .main-menu .navbar #left-nav-ul li {
+      padding: 0 20px; }
+      header .main-menu .navbar #left-nav-ul li a {
+        padding: 45px 0;
+        font-family: "Gilroy", sans-serif;
+        font-size: 16px;
+        color: #daddef;
+        text-transform: uppercase;
+        font-weight: bold; }
+        header .main-menu .navbar #left-nav-ul li a:hover {
+          color: #0eb679; }
+      header .main-menu .navbar #left-nav-ul li.current-page a {
+        color: #0eb679 !important; }
+      header .main-menu .navbar #left-nav-ul li:first-child {
+        padding-left: 0; }
+      header .main-menu .navbar #left-nav-ul li:last-child {
+        padding-right: 0; }
+    header .main-menu .language {
+      border: 1px solid #50515b;
+      padding: 10px;
+      height: 100%;
+      margin-right: 5px; }
+    header .main-menu #right-nav-ul {
+      display: inline; }
+      header .main-menu #right-nav-ul li {
+        display: inline-block;
+        margin: 0 5px; }
+        header .main-menu #right-nav-ul li a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 170px;
+          font-family: "Gilroy", sans-serif;
+          text-align: center;
+          border: 1px solid #50515b;
+          height: 60px;
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: 700; }
+          header .main-menu #right-nav-ul li a:hover {
+            border: 1px solid #0eb679;
+            color: #0eb679 !important; }
+        header .main-menu #right-nav-ul li.started a {
+          background: #0eb679;
+          border: 1px solid #0eb679; }
+          header .main-menu #right-nav-ul li.started a:hover {
+            background: none; }
+  header .breadcrumbs-line {
+    position: absolute;
+    border-top: 1px solid rgba(162, 165, 192, 0.25);
+    width: 100%;
+    bottom: 110px;
+    left: 0; }
+  header .main-text-header {
+    min-height: 750px;
+    position: relative; }
+    header .main-text-header .description p {
+      color: #daddef; }
+    header .main-text-header .breadcrumbs-block {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      margin-bottom: 0px;
+      padding: 42px 0; }
+      header .main-text-header .breadcrumbs-block a {
+        color: #daddef !important;
+        font-family: "Gilroy", sans-serif;
+        margin-right: 10px;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase; }
+        header .main-text-header .breadcrumbs-block a:hover {
+          color: #0eb679 !important; }
+      header .main-text-header .breadcrumbs-block .breadcrumbs__current {
+        color: #0eb679 !important;
+        font-family: "Gilroy", sans-serif;
+        margin-right: 10px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700; }
+      header .main-text-header .breadcrumbs-block img {
+        margin-top: -4px;
+        margin-right: 10px; }
+    header .main-text-header .social-header {
+      position: absolute;
+      bottom: 0;
+      right: 15px;
+      margin-bottom: 0px;
+      padding: 43px 0; }
+      header .main-text-header .social-header a {
+        margin: 0 10px; }
+        header .main-text-header .social-header a:first-child {
+          margin-left: 0; }
+        header .main-text-header .social-header a:last-child {
+          margin-right: 0; }
+
+footer {
+  background: #161617;
+  padding-top: 80px; }
+  footer .footer-logo {
+    margin-top: 5px; }
+  footer .social-media {
+    margin-top: 30px; }
+    footer .social-media a {
+      margin: 0 10px; }
+      footer .social-media a:first-child {
+        margin-left: 0; }
+      footer .social-media a:last-child {
+        margin-right: 0; }
+  footer hr {
+    color: #262628;
+    margin: 60px 0;
+    opacity: 1; }
+  footer .menu-section .title-menu {
+    font-family: "Gilroy", sans-serif;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-transform: uppercase; }
+  footer .menu-section ul li {
+    line-height: 30px; }
+    footer .menu-section ul li a {
+      color: #daddef;
+      font-size: 14px; }
+      footer .menu-section ul li a:hover {
+        color: #0eb679 !important; }
+  footer .footer-content p {
+    font-size: 12px;
+    color: #a7a9b4;
+    margin-bottom: 15px;
+    line-height: 18px; }
+  footer .copyright-bg {
+    background: #131314;
+    margin-top: 60px; }
+    footer .copyright-bg .copyright {
+      line-height: 48px;
+      height: 80px;
+      color: #a7a9b4; }
+  footer #buttons-nav-ul {
+    display: inline-block;
+    margin-top: 30px;
+    position: relative; }
+    footer #buttons-nav-ul li {
+      display: inline-block;
+      margin: 0 5px; }
+      footer #buttons-nav-ul li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 140px;
+        font-family: "Gilroy", sans-serif;
+        text-align: center;
+        border: 1px solid #50515b;
+        height: 48px;
+        color: #fff; }
+        footer #buttons-nav-ul li a:hover {
+          border: 1px solid #0eb679;
+          color: #0eb679 !important; }
+      footer #buttons-nav-ul li.login {
+        margin-left: 0; }
+      footer #buttons-nav-ul li.started a {
+        border: 1px solid #0eb679; }
+        footer #buttons-nav-ul li.started a:hover {
+          border: 1px solid #50515b !important; }
+
+.page-template-default .wrapper {
+  background: linear-gradient(90deg, #f6f6f6 37.7%, #fff 10%); }
+
+@media (min-width: 1921px) {
+  .wrapper {
+    background: #fff;
+    min-width: 1921px; }
+    .wrapper .right-field {
+      max-width: 1920px;
+      margin: 0 auto;
+      position: relative; }
+      .wrapper .right-field .right-field-text {
+        position: absolute;
+        right: 0;
+        writing-mode: tb-rl;
+        transform: rotate(0deg);
+        color: #f6f6f6;
+        text-transform: uppercase;
+        font-size: 150px;
+        white-space: nowrap;
+        margin-top: 110px;
+        font-weight: 700;
+        margin-right: 55px; }
+    .wrapper section {
+      background: #fff;
+      max-width: 1920px;
+      margin: 0 auto; } }
+@media (min-width: 1600px) and (max-width: 1920px) {
+  .wrapper {
+    background: #fff;
+    min-width: 1621px; }
+    .wrapper .right-field {
+      max-width: 1620px;
+      margin: 0 auto;
+      position: relative; }
+      .wrapper .right-field .right-field-text {
+        position: absolute;
+        right: 0;
+        writing-mode: tb-rl;
+        transform: rotate(0deg);
+        color: #f6f6f6;
+        text-transform: uppercase;
+        font-size: 150px;
+        white-space: nowrap;
+        margin-top: 110px;
+        font-weight: 700;
+        margin-right: -40px; }
+    .wrapper section {
+      background: #fff;
+      max-width: 1620px;
+      margin: 0 auto; } }
+.wrapper section:first-child {
+  padding-top: 110px; }
+.wrapper section:last-child {
+  padding-bottom: 110px; }
+
+#navbarNav ul#left-nav-ul > li > ul > li > ul > li {
+  padding: 7px 0; }
+  #navbarNav ul#left-nav-ul > li > ul > li > ul > li > a {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600 !important;
+    font-size: 14px;
+    padding-left: 5px; }
+#navbarNav ul#left-nav-ul > li:hover .sub-menu {
+  z-index: 111; }
+
+body section {
+  padding: 55px 0; }
+  body section:nth-child(2) {
+    padding-top: 110px !important; }
+  body section.last {
+    padding-bottom: 110px; }
+  body section .text p:last-child {
+    margin-bottom: 0; }
+
+.flex-section {
+  margin: 0;
+  flex-wrap: wrap; }
+  .flex-section .flex-block-5 {
+    flex: 1 0 12%; }
+
+.center-block {
+  display: flex;
+  align-content: center;
+  flex-flow: row wrap; }
+  .center-block p:last-child {
+    margin-bottom: 0; }
+
+.greenbg {
+  background: #0eb679; }
+  .greenbg p, .greenbg h2, .greenbg h3, .greenbg li {
+    color: #fff; }
+  .greenbg li:before {
+    background: #fff; }
+
+.greybg {
+  background: #f6f6f6; }
+
+hr {
+  opacity: 1;
+  color: #d1d3df;
+  margin: 80px 0; }
+
+#right-left .section-right .center-block {
+  padding-right: 70px; }
+#right-left .section-left .center-block {
+  padding-left: 70px; }
+
+.darkbg {
+  background: #161617; }
+  .darkbg h2, .darkbg h3 {
+    color: #fff; }
+  .darkbg .content p, .darkbg .content li, .darkbg .text p, .darkbg .text li {
+    color: #daddef; }
+
+#icons .icon-container {
+  position: relative; }
+#icons .icon {
+  text-align: center;
+  min-height: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  #icons .icon img {
+    margin-bottom: 22px; }
+  #icons .icon .title {
+    font-family: "Gilroy", sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700; }
+  #icons .icon .text {
+    margin-top: 25px; }
+
+.sidebar-widget > div > div {
+  margin-top: 20px;
+  padding-top: 30px; }
+
+#right_widget-2 {
+  padding: 40px; }
+  #right_widget-2 .bgwidget {
+    background: #0eb679; }
+
+#nav_menu-2 {
+  padding: 5px 40px 40px 40px; }
+  #nav_menu-2 .widgettitle {
+    font-size: 25px;
+    font-family: "Gilroy", sans-serif;
+    color: #333333;
+    font-weight: 700;
+    text-transform: uppercase; }
+  #nav_menu-2 ul {
+    margin-top: 25px; }
+    #nav_menu-2 ul li {
+      list-style-type: none;
+      line-height: 28px;
+      font-size: 16px;
+      font-family: "Gilroy", sans-serif;
+      font-weight: 300; }
+      #nav_menu-2 ul li a {
+        font-family: "Gilroy", sans-serif;
+        text-decoration: none !important;
+        color: #676767; }
+        #nav_menu-2 ul li a:hover {
+          color: #0eb679 !important; }
+
+.bgwidget {
+  min-height: 445px; }
+  .bgwidget .back {
+    padding: 0 50px; }
+    .bgwidget .back img {
+      margin: 0 auto;
+      padding-bottom: 20px; }
+    .bgwidget .back .title {
+      font-size: 20px;
+      font-family: "Gilroy", sans-serif;
+      color: #fff;
+      padding-bottom: 20px; }
+    .bgwidget .back .text p {
+      color: #fff;
+      font-size: 16px; }
+  .bgwidget .bx-pager {
+    margin-top: 20px; }
+  .bgwidget .bx-pager-item {
+    display: inline-block; }
+  .bgwidget .bx-wrapper .bx-pager.bx-default-pager a {
+    background: #23985a;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+    .bgwidget .bx-wrapper .bx-pager.bx-default-pager a.active {
+      background: #fff; }
+  .bgwidget .bx-pager-item {
+    padding: 5px;
+    margin-top: -20px; }
+  .bgwidget .bx-wrapper {
+    margin-top: -40px; }
+
+.mt85 {
+  margin-top: -105px; }
+  .mt85 a {
+    margin: 0 10px; }
+
+.third-block {
+  margin: 90px 0 50px 0;
+  min-height: 250px;
+  background-size: cover;
+  border: 1px solid #d1d3df; }
+  .third-block .title {
+    width: 100%;
+    color: #333333;
+    font-family: "Gilroy", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700; }
+
+.page-template-default section {
+  background: linear-gradient(90deg, #f6f6f6 37.7%, #fff 10%); }
+.page-template-default article {
+  padding-bottom: 3rem; }
+  .page-template-default article h5 {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 700; }
+  .page-template-default article ul {
+    margin-bottom: 30px; }
+.page-template-default .column-bar {
+  margin-top: 3rem;
+  padding: 50px; }
+  .page-template-default .column-bar h2 {
+    font-size: 25px; }
+  .page-template-default .column-bar ul li:before {
+    border-radius: 0%;
+    margin-top: 13px; }
+  .page-template-default .column-bar .bgwidget ul li:before {
+    background: none; }
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+  .page-template-default section {
+    background: linear-gradient(90deg, #f6f6f6 35.2%, #fff 10%); } }
+@media (min-width: 1600px) {
+  .main-menu .logotype {
+    margin-left: 140px; }
+  .main-menu .has-text-align-right {
+    padding-right: 140px; } }
+@media (max-width: 1599px) {
+  .cube-bottom {
+    display: none; }
+
+  .right-field-text {
+    display: none; }
+
+  header .navbar {
+    margin-left: 0; }
+  header .login-menu {
+    margin-right: 30px; }
+  header .main-menu.position-fixed {
+    background: #161617 !important; }
+  header .main-menu #right-nav-ul li a {
+    min-width: 110px;
+    font-size: 14px; }
+  header .main-menu .language-column {
+    width: 50px;
+    border-left: 0; }
+    header .main-menu .language-column .lan {
+      width: 50px; }
+    header .main-menu .language-column .header-scroll {
+      display: none; }
+  header .main-menu .logotype {
+    margin-left: 50px;
+    margin-right: 10px; }
+  header .main-menu .icon-column {
+    border-right: 0;
+    width: 50px; }
+    header .main-menu .icon-column a {
+      width: 50px; }
+      header .main-menu .icon-column a img {
+        width: 50%; } }
+@media (min-width: 1400px) and (max-width: 1599px) {
+  header .main-menu .navbar #left-nav-ul li a {
+    font-size: 14px; }
+
+  .page-template-default section {
+    background: linear-gradient(90deg, #f6f6f6 34.5%, #fff 10%); } }
+@media (max-width: 1199px) {
+  .flex-section .flex-block-5 {
+    flex: 1 0 30%;
+    margin-top: 24px; }
+    .flex-section .flex-block-5:first-child {
+      padding-left: 12px !important; }
+    .flex-section .flex-block-5:last-child {
+      padding-right: 12px !important; } }
+@media (min-width: 992px) and (max-width: 1399px) {
+  .page-template-default section {
+    background: linear-gradient(90deg, #f6f6f6 34.5%, #fff 10%); } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  footer #buttons-nav-ul li {
+    margin: 0; } }
+@media (min-width: 992px) {
+  header .login-icon-button {
+    display: none; }
+  header .logo-block {
+    align-items: center;
+    display: flex; }
+  header .login-icon-button {
+    display: none; }
+  header .login-menu {
+    display: inline-block; }
+
+  .menu-main {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  .navbar {
+    width: 100%; }
+    .navbar #navbarNav {
+      width: 100%; }
+      .navbar #navbarNav ul#left-nav-ul > li.current-menu-item > a {
+        border-bottom: 3px solid #daddef; }
+      .navbar #navbarNav ul#left-nav-ul > li > a:hover {
+        padding: 60px 0px; }
+      .navbar #navbarNav ul#left-nav-ul > li a:hover {
+        color: #fff !important;
+        border-bottom: 3px solid #0eb679;
+        padding: 44px 0; }
+      .navbar #navbarNav ul#left-nav-ul > li > ul {
+        display: none;
+        position: absolute;
+        background: #0eb679;
+        width: 100%;
+        left: 0;
+        padding-left: 25px;
+        padding-top: 50px;
+        margin-top: 43px;
+        z-index: 111;
+        padding-bottom: 50px; }
+        .navbar #navbarNav ul#left-nav-ul > li > ul > li {
+          display: inline-block;
+          margin-right: 50px;
+          vertical-align: top;
+          padding-left: 0; }
+          .navbar #navbarNav ul#left-nav-ul > li > ul > li > a {
+            color: #fff !important;
+            padding: 35px 0; }
+            .navbar #navbarNav ul#left-nav-ul > li > ul > li > a:hover {
+              cursor: default; }
+          .navbar #navbarNav ul#left-nav-ul > li > ul > li > ul {
+            display: block;
+            padding: 20px 0 20px 25px !important; }
+            .navbar #navbarNav ul#left-nav-ul > li > ul > li > ul > li {
+              padding: 7px 0; }
+              .navbar #navbarNav ul#left-nav-ul > li > ul > li > ul > li:before {
+                content: ' ';
+                background: url("/web/20220815140117im_/https://trade-horizon.com/wp-content/themes/trade/img/right-arrow-button.png");
+                position: absolute;
+                width: 16px;
+                height: 8px;
+                margin-left: -25px;
+                margin-top: 8px; }
+              .navbar #navbarNav ul#left-nav-ul > li > ul > li > ul > li::marker {
+                content: '';
+                display: none; }
+              .navbar #navbarNav ul#left-nav-ul > li > ul > li > ul > li a {
+                color: #fff;
+                text-transform: none;
+                font-weight: 400;
+                padding: 0; }
+                .navbar #navbarNav ul#left-nav-ul > li > ul > li > ul > li a:hover {
+                  text-decoration: underline;
+                  color: #fff !important; }
+      .navbar #navbarNav ul#left-nav-ul > li:hover .sub-menu {
+        z-index: 111;
+        display: block; } }
+@media (max-width: 991px) {
+  .header-scroll {
+    display: none !important; }
+
+  .page-template-default section {
+    padding-bottom: 0px !important;
+    background: #fff !important; }
+    .page-template-default section #nav_menu-2 {
+      padding-bottom: 0; }
+    .page-template-default section .third-block {
+      justify-content: center; }
+
+  footer .flex-section .flex-block-5:first-child {
+    text-align: center;
+    margin-bottom: 30px; }
+
+  .menu-mob {
+    position: absolute !important;
+    right: 0;
+    width: 100%;
+    display: block; }
+    .menu-mob nav {
+      right: 0px;
+      display: block;
+      position: absolute;
+      width: 100%;
+      margin-left: 25px; }
+      .menu-mob nav .navbar-toggler {
+        display: block;
+        position: absolute;
+        margin-top: -8px; }
+      .menu-mob nav .navbar-collapse.show {
+        margin-top: 15px;
+        background: #0eb679;
+        position: absolute;
+        width: 83%;
+        height: 100vh;
+        top: -50px;
+        z-index: 11;
+        padding: 20px;
+        text-align: center; }
+      .menu-mob nav .navbar-collapse .close-mobile-menu {
+        background: url("/web/20220815140117im_/https://trade-horizon.com/wp-content/themes/trade/img/close-menu.png") no-repeat;
+        width: 19px;
+        height: 19px;
+        position: absolute;
+        margin-top: 35px;
+        margin-left: 20px;
+        top: 0;
+        cursor: pointer;
+        color: #fff; }
+
+  header .login-icon-button {
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    cursor: pointer;
+    background: url("/web/20220815140117im_/https://trade-horizon.com/wp-content/themes/trade/img/user.png") no-repeat center #0eb679; }
+  header .language-column {
+    display: flex;
+    height: 110px !important;
+    align-items: center;
+    width: 100px !important; }
+    header .language-column .lan {
+      float: left; }
+  header .main-menu .logotype {
+    margin-top: 6px; }
+
+  .right-menu-account .login-menu {
+    display: none;
+    position: absolute !important;
+    right: -24px;
+    margin-top: 10px; }
+
+  #navbarNav > ul {
+    margin-top: 85px; }
+    #navbarNav > ul > li {
+      padding: 20px 0;
+      line-height: 40px; }
+      #navbarNav > ul > li.menu-item-has-children.active > a:after {
+        content: ' - ';
+        width: 23px;
+        height: 23px;
+        position: relative;
+        display: inline-block; }
+      #navbarNav > ul > li.menu-item-has-children > a:after {
+        content: ' + ';
+        width: 23px;
+        height: 23px;
+        position: relative;
+        display: inline-block; }
+      #navbarNav > ul > li > ul {
+        display: none;
+        list-style: none;
+        padding: 0; }
+        #navbarNav > ul > li > ul > li {
+          line-height: 40px; }
+          #navbarNav > ul > li > ul > li.menu-item-has-children.active > a:after {
+            content: ' - ';
+            width: 23px;
+            height: 23px;
+            position: relative;
+            display: inline-block; }
+          #navbarNav > ul > li > ul > li.menu-item-has-children > a {
+            font-size: 16px; }
+            #navbarNav > ul > li > ul > li.menu-item-has-children > a:after {
+              content: ' + ';
+              width: 23px;
+              height: 23px;
+              position: relative;
+              display: inline-block; }
+          #navbarNav > ul > li > ul > li > ul {
+            display: none;
+            padding: 0; }
+            #navbarNav > ul > li > ul > li > ul li {
+              padding: 0 !important;
+              margin-left: 25px; }
+              #navbarNav > ul > li > ul > li > ul li::marker {
+                content: ''; }
+              #navbarNav > ul > li > ul > li > ul li:before {
+                content: ' ';
+                background: url(/web/20220815140117im_/https://trade-horizon.com/wp-content/themes/trade/img/right-arrow-button.png);
+                position: absolute;
+                width: 16px;
+                height: 8px;
+                margin-left: -25px;
+                margin-top: 15px; }
+              #navbarNav > ul > li > ul > li > ul li a {
+                text-transform: none !important;
+                font-weight: 300 !important; }
+    #navbarNav > ul li {
+      text-align: left !important;
+      padding: 0 0px 0 20px !important; }
+      #navbarNav > ul li a {
+        color: #fff !important;
+        padding: 15px 0 !important; }
+        #navbarNav > ul li a:hover {
+          color: #333333 !important; }
+
+  header .col-lg-5 {
+    width: 50%; }
+    header .col-lg-5.has-text-align-right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      header .col-lg-5.has-text-align-right .language {
+        width: 39px;
+        height: 39px; }
+      header .col-lg-5.has-text-align-right .login-icon-button {
+        display: inline-block;
+        width: 39px;
+        height: 39px;
+        cursor: pointer;
+        background: url("/web/20220815140117im_/https://trade-horizon.com/wp-content/themes/trade/img/user.png") no-repeat center #0eb679; }
+      header .col-lg-5.has-text-align-right .login-menu {
+        display: none; }
+        header .col-lg-5.has-text-align-right .login-menu #right-nav-ul {
+          position: absolute;
+          margin-right: 400px;
+          width: 100%;
+          display: block;
+          /* right: -50px; */
+          left: -145px;
+          top: 30px; }
+  header .navbar-toggler {
+    border: 0px; }
+    header .navbar-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+  header .main-menu {
+    margin: 0; }
+    header .main-menu .col-lg-7 {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      header .main-menu .col-lg-7 .close-mobile-menu {
+        background: url("/web/20220815140117im_/https://trade-horizon.com/wp-content/themes/trade/img/close-menu.png") no-repeat;
+        width: 19px;
+        height: 19px;
+        position: absolute;
+        margin-top: 54px;
+        margin-left: 20px;
+        top: 0;
+        cursor: pointer;
+        color: #fff; }
+      header .main-menu .col-lg-7 .logotype {
+        margin-right: 0;
+        margin-left: 50px; }
+      header .main-menu .col-lg-7 .menu-mob {
+        width: 100%;
+        left: 0;
+        position: absolute !important; }
+        header .main-menu .col-lg-7 .menu-mob #navbarNav {
+          position: absolute;
+          background: #0eb679;
+          width: 83%;
+          height: 100vh;
+          top: -50px;
+          z-index: 11;
+          padding: 20px;
+          text-align: center; }
+          header .main-menu .col-lg-7 .menu-mob #navbarNav li:first-child {
+            padding-left: 20px; }
+          header .main-menu .col-lg-7 .menu-mob #navbarNav li:last-child {
+            padding-right: 20px; }
+
+  .darkbg, .greenbg {
+    padding: 30px !important; }
+
+  .section-left img {
+    margin-top: 30px; }
+
+  .section-right img {
+    margin-top: 30px; }
+
+  .border-320 {
+    padding: 30px 0; }
+
+  hr {
+    margin: 60px 0; }
+
+  body section {
+    padding: 30px 0; }
+    body section:nth-child(2) {
+      padding-top: 60px !important; }
+    body section.last {
+      padding-bottom: 60px; }
+    body section .text {
+      width: 100%; }
+      body section .text p:last-child {
+        margin-bottom: 0; }
+
+  footer .menu-section {
+    margin-top: 30px; }
+  footer .copyright {
+    height: auto !important;
+    text-align: center;
+    padding: 20px 0; }
+    footer .copyright .has-text-align-right {
+      text-align: center; }
+
+  .greenbg, .darkbg {
+    height: auto !important; }
+
+  #icons .icon-container {
+    position: relative;
+    margin-top: 24px; }
+    #icons .icon-container:nth-child(1) {
+      margin-top: 0 !important; }
+
+  #right-left .section-right .center-block {
+    padding-right: 12px; }
+  #right-left .section-left .center-block {
+    padding-left: 12px; }
+
+  .page-template-default article {
+    padding-bottom: 40px; }
+    .page-template-default article p:last-child {
+      margin-bottom: 0px; } }
+@media (max-width: 767px) {
+  .menu-main {
+    position: absolute;
+    margin-top: 35px; }
+
+  footer .col-lg-4.col-md-12, footer .menu-section {
+    text-align: center; }
+
+  .flex-section .flex-block-5 {
+    flex: 1 0 100%;
+    margin-top: 24px; } }
+@media (max-width: 575px) {
+  header {
+    height: auto; }
+    header .logotype img {
+      width: 60%;
+      height: auto; }
+    header .breadcrumbs-line {
+      border: 0; }
+    header .social-header {
+      display: none; }
+    header .main-text-header .breadcrumbs-block {
+      margin-bottom: 0px;
+      position: relative;
+      margin-top: 40px; }
+      header .main-text-header .breadcrumbs-block .line {
+        width: 150px; }
+    header .first-block {
+      margin-top: 150px; }
+
+  .border-320 {
+    width: 120px; }
+
+  #right_widget-2 {
+    padding: 40px 20px !important; } }
+@keyframes downWipe {
+  0% {
+    height: 0; }
+  50% {
+    height: 100%; }
+  70% {
+    height: 100%;
+    transform: scaleY(0.5);
+    transform-origin: bottom; }
+  100% {
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom; } }
+
+/*# sourceMappingURL=main.css.map */
+
+/*
+     FILE ARCHIVED ON 14:01:17 Aug 15, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:14:04 Dec 31, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 62.686
+  exclusion.robots: 0.079
+  exclusion.robots.policy: 0.071
+  RedisCDXSource: 0.983
+  esindex: 0.008
+  LoadShardBlock: 41.725 (3)
+  PetaboxLoader3.datanode: 50.071 (5)
+  CDXLines.iter: 17.355 (3)
+  load_resource: 269.835
+  PetaboxLoader3.resolve: 186.28
+  loaddict: 73.998
+*/
